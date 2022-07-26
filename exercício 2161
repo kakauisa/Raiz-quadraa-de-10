@@ -1,0 +1,8 @@
+def raizquadr(i):
+    if i == 0:
+        return 0
+    else:
+     return 1/(6+raizquadr(i-1))
+
+n = (3.0 + raizquadr(int(input())))
+print("{:.10f}".format(n))
